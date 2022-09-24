@@ -1,0 +1,439 @@
+/* base */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  /* font-size: 62.5%; */
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* font-size: 1rem; */
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+button {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+/* aqui va mis estilos personalizados */
+/* variables color */
+:root {
+  --marca: #f0f8ff;
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+}
+
+/* background */
+.bs-marca {
+  background-color: var(--marca);
+}
+.bs-blue {
+  background-color: var(--bs-blue);
+}
+.bs-indigo {
+  background-color: var(--bs-indigo);
+}
+.bs-purple {
+  background-color: var(--bs-purple);
+}
+.bs-pink {
+  background-color: var(--bs-pink);
+}
+.bs-red {
+  background-color: var(--bs-red);
+}
+.bs-orange {
+  background-color: var(--bs-orange);
+}
+.bs-yellow {
+  background-color: var(--bs-yellow);
+}
+.bs-green {
+  background-color: var(--bs-green);
+}
+.bs-teal {
+  background-color: var(--bs-teal);
+}
+.bs-cyan {
+  background-color: var(--bs-cyan);
+}
+.bs-white {
+  background-color: var(--bs-white);
+}
+.bs-gray {
+  background-color: var(--bs-gray);
+}
+.bs-gray-dark {
+  background-color: var(--bs-gray-dark);
+}
+.bs-gray-100 {
+  background-color: var(--bs-gray-100);
+}
+.bs-gray-200 {
+  background-color: var(--bs-gray-200);
+}
+.bs-gray-300 {
+  background-color: var(--bs-gray-300);
+}
+.bs-gray-400 {
+  background-color: var(--bs-gray-400);
+}
+.bs-gray-500 {
+  background-color: var(--bs-gray-500);
+}
+.bs-gray-600 {
+  background-color: var(--bs-gray-600);
+}
+.bs-gray-700 {
+  background-color: var(--bs-gray-700);
+}
+.bs-gray-800 {
+  background-color: var(--bs-gray-800);
+}
+.bs-gray-900 {
+  background-color: var(--bs-gray-900);
+}
+.bs-primary {
+  background-color: var(--bs-primary);
+}
+.bs-secondary {
+  background-color: var(--bs-secondary);
+}
+.bs-success {
+  background-color: var(--bs-success);
+}
+.bs-info {
+  background-color: var(--bs-info);
+}
+.bs-warning {
+  background-color: var(--bs-warning);
+}
+.bs-danger {
+  background-color: var(--bs-danger);
+}
+.bs-light {
+  background-color: var(--bs-light);
+}
+.bs-dark {
+  background-color: var(--bs-dark);
+}
+
+/* color text */
+.text-marca {
+  color: var(--marca);
+}
+.text-bs-blue {
+  color: var(--bs-blue);
+}
+.text-bs-indigo {
+  color: var(--bs-indigo);
+}
+.text-bs-purple {
+  color: var(--bs-purple);
+}
+.text-bs-pink {
+  color: var(--bs-pink);
+}
+.text-bs-red {
+  color: var(--bs-red);
+}
+.text-bs-orange {
+  color: var(--bs-orange);
+}
+.text-bs-yellow {
+  color: var(--bs-yellow);
+}
+.text-bs-green {
+  color: var(--bs-green);
+}
+.text-bs-teal {
+  color: var(--bs-teal);
+}
+.text-bs-cyan {
+  color: var(--bs-cyan);
+}
+.text-bs-white {
+  color: var(--bs-white);
+}
+.text-bs-gray {
+  color: var(--bs-gray);
+}
+.text-bs-gray-dark {
+  color: var(--bs-gray-dark);
+}
+.text-bs-gray-100 {
+  color: var(--bs-gray-100);
+}
+.text-bs-gray-200 {
+  color: var(--bs-gray-200);
+}
+.text-bs-gray-300 {
+  color: var(--bs-gray-300);
+}
+.text-bs-gray-400 {
+  color: var(--bs-gray-400);
+}
+.text-bs-gray-500 {
+  color: var(--bs-gray-500);
+}
+.text-bs-gray-600 {
+  color: var(--bs-gray-600);
+}
+.text-bs-gray-700 {
+  color: var(--bs-gray-700);
+}
+.text-bs-gray-800 {
+  color: var(--bs-gray-800);
+}
+.text-bs-gray-900 {
+  color: var(--bs-gray-900);
+}
+.text-bs-primary {
+  color: var(--bs-primary);
+}
+.text-bs-secondary {
+  color: var(--bs-secondary);
+}
+.text-bs-success {
+  color: var(--bs-success);
+}
+.text-bs-info {
+  color: var(--bs-info);
+}
+.text-bs-warning {
+  color: var(--bs-warning);
+}
+.text-bs-danger {
+  color: var(--bs-danger);
+}
+.text-bs-light {
+  color: var(--bs-light);
+}
+.text-bs-dark {
+  color: var(--bs-dark);
+}
+
+
+
+
+/* darkMode */
+.toggler-wrapper {
+  display: block;
+  width: 45px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+}
+.toggler-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.toggler-wrapper input[type="checkbox"]:checked+.toggler-slider {
+  /* background-color: #44cc66; */
+  background-color: #1D1F31;
+  background-color: #383B3F;
+}
+.toggler-wrapper .toggler-slider {
+  background-color: #ccc;
+  position: absolute;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.toggler-wrapper .toggler-knob {
+  position: absolute;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.toggler-wrapper.style-1 input[type="checkbox"]:checked+.toggler-slider .toggler-knob {
+  left: calc(100% - 19px - 3px);
+}
+
+.toggler-wrapper.style-1 .toggler-knob {
+  width: calc(25px - 6px);
+  height: calc(25px - 6px);
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+  background-color: #fff;
+}
+/* navs */
+.hover_link:active {
+  border-top: #198754 solid 4px !important;
+  padding: 4px;
+}
+.hover_link:hover {
+  border-top: #ffc107 solid 4px !important;
+  padding-top: 4px;
+
+}
+
+/* inputs */
+.form-control:focus {
+  border-color: #fff;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(0, 0, 0);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(0, 0, 0);
+}
+
+/* hero */
+.hero_action{ 
+  /* background-image:url(https://aca.gonzacr.com/academia/wp-content/uploads/2022/08/hero_action.png); */
+  background-repeat:no-repeat; 
+  background-position: center;
+  /* height: 500px; */
+  height: auto;
+  max-width: 100%;
+  position:relative;
+  color: white;
+  z-index:1;
+}
+
+.hero_action:after {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, 0.730);
+  z-index:-1;
+}
+.header_img{
+  background-repeat:no-repeat; 
+  background-position: center;
+  height: 200px;
+  /* height: auto; */
+  max-width: 100%;
+  position:relative;
+  color: white;
+  z-index:1;
+}
+@media (min-width: 992px) { 
+  .header_img{
+    height: 500px;
+  }
+ }
+/* form */
+.form_input{
+  /* padding-right: 1rem;
+  padding-left: 0.2rem;
+  padding-bottom: 0.6rem; */
+  width: 12rem;
+  padding: 0.2rem;
+  border: 0;
+  background-color: #495057;
+  color: #fff;
+  border-bottom: 1px solid #adb5bd;
+  
+}
+
+@media (min-width: 992px) { 
+  .form_input{
+    width: 10.3rem;
+  }
+ }
+
+.form_input:focus{
+  border-color: #fff;
+  outline: 0;
+  border-bottom: 1px solid #1D1F31;
+
+}
+.form_input::placeholder{
+  color: #adb5bd;
+
+}
+.pointer{
+  cursor: pointer;
+}
+
+/* footer */
+.footer_nav{
+padding: 1rem;
+}
+.footer_nav:hover{
+  background-color: red;
+}
+
