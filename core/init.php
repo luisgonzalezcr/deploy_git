@@ -1,5 +1,5 @@
 <?php
-define('DOMAIN','http://gonzaapp.com');
+define('DOMAIN','https://luisgonzalezcr.github.io/deploy_git');
 define('SECRET_KEY',"6s7asdfasdf21123/**//");
 
 // require 'functions.php';
